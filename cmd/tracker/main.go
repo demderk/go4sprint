@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/Yandex-Practicum/tracker/internal/daysteps"
-	"github.com/Yandex-Practicum/tracker/internal/spentcalories"
+	"go4sprint/internal/daysteps"
+	"go4sprint/internal/spentcalories"
 )
 
 func main() {
@@ -58,6 +58,7 @@ func main() {
 			log.Printf("не получилось получить информацию о тренировке: %v", err)
 			continue
 		}
+
 		trainingLog = append(trainingLog, trainingInfo)
 	}
 
